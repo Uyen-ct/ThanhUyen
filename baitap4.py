@@ -8,19 +8,18 @@ Created on Sun Aug 18 09:59:19 2024
 a= float(input('quãng đường đi được(km):'))
 if a<=1:
     x=20
-    u=x*a
     print('số tiền(k)',x)
 if a<=3:
     y=13
-    u=a*y
-    print('số tiền(k):',u) 
+    x=a*13
+    print('số tiền(k):',x)
 elif a>=4 and a<=8:
     z=12
-    u=u+((a-3)*z)
-    print('số tiền(k):',u)
+    x=12*(a-3)+(3*13)
+    print('số tiền(k):',x)
 else:
     t=10
-    u=a*t
-    print('số tiền(k):',u)
-if u>100:
-    print('số tiền(k):',u-(u*0.08))
+    x=10*(a-8)+(8*12)
+    print('số tiền(k):',x)
+if x>100:
+    print('số tiền(k):',x-(x*0.08))
